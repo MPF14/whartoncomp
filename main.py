@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('whartoncomp/data.csv', skipinitialspace=True, na_values='?')
+df = pd.read_csv('whartoncomp/data/data.csv', skipinitialspace=True, na_values='?')
 
 df['win'] = (df['team_score'] > df['opponent_team_score']).astype(int)
 
@@ -16,9 +16,9 @@ print(tavg)
 # sdv = sdv.reset_index()
 # avg = avg.reset_index()
 # tavg = tavg.reset_index()
-# sdvpath = 'sdv.csv'
-# avgpath = 'avg.csv'
-# tavgpath = 'tavg.csv'
+# sdvpath = 'data/sdv.csv'
+# avgpath = 'data/avg.csv'
+# tavgpath = 'data/tavg.csv'
 # sdv.to_csv(sdvpath, index=False)
 # avg.to_csv(avgpath, index=False) 
 # tavg.to_csv(tavgpath, index=False)
