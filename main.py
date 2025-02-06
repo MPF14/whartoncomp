@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+#test commit
+
 df = pd.read_csv('/Users/mf/eh/whartoncomp/data.csv', skipinitialspace=True, na_values='?')
 # commit test
 
