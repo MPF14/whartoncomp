@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('whartoncomp/data/data.csv', skipinitialspace=True, na_values='?')
+df = pd.read_csv('/Users/mf/eh/whartoncomp/data.csv', skipinitialspace=True, na_values='?')
+# commit test
 
 df['win'] = (df['team_score'] > df['opponent_team_score']).astype(int)
 
@@ -22,5 +23,3 @@ print(tavg)
 # sdv.to_csv(sdvpath, index=False)
 # avg.to_csv(avgpath, index=False) 
 # tavg.to_csv(tavgpath, index=False)
-
-
