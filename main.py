@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('/Users/mf/eh/whartoncomp/data.csv', skipinitialspace=True, na_values='?')
+df = pd.read_csv('whartoncomp/data.csv', skipinitialspace=True, na_values='?')
 
 df['win'] = (df['team_score'] > df['opponent_team_score']).astype(int)
 
